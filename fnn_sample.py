@@ -223,7 +223,7 @@ import matplotlib.pyplot as plt
 print('Plot the accuracy')
 # Keras 2.2.4 recognizes 'acc' and 2.3.1 recognizes 'accuracy'
 # use the command python -c 'import keras; print(keras.__version__)' on MAC or Linux to check Keras' version
-plt.plot(classifierHistory.history['acc'])
+plt.plot(classifierHistory.history['accuracy'])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
