@@ -1,3 +1,8 @@
+# EDITED FOR PROJECT 4
+# BENJAMIN BAESU
+# CSE 548
+
+
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 15 19:43:04 2019
