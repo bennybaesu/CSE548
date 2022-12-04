@@ -117,7 +117,7 @@ X = onehotencoder.fit_transform(X).toarray()
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 ct = ColumnTransformer(
-    [('one_hot_encoder', OneHotEncoder(), [1,2,3])],    # The column numbers to be transformed ([1, 2, 3] represents three columns to be transferred)
+    [('one_hot_encoder', OneHotEncoder(handle_unknown = "ignore"), [1,2,3])],    # The column numbers to be transformed ([1, 2, 3] represents three columns to be transferred)
     remainder='passthrough'                         # Leave the rest of the columns untouched
 )
 X = np.array(ct.fit_transform(X), dtype=np.float)
